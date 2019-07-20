@@ -8,4 +8,6 @@ https://job4j.ru/courses/java_with_zero_to_job.html
 Мне нужно пройти все 4 уровня обучения. По возможности закончить в январе 2020.
 
 
+Репозиторий клонирован на VikaWin10  C:\projects\temp\job4j>
+
 
