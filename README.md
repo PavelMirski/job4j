@@ -10,4 +10,6 @@ https://job4j.ru/courses/java_with_zero_to_job.html
 
 Репозиторий клонирован на VikaWin10  C:\projects\temp\job4j>
 
+Папка temp удалена с VikaWin10
+
 
