@@ -12,7 +12,6 @@ public class DummyBot {
      * @param question Вопрос от клиента.
      * @return Ответ.
      */
-//public static void main(String[] args)
 
 
     public String answer(String question) {
@@ -26,4 +25,13 @@ public class DummyBot {
         }
         return rsl;
     }
+
+   /** public static void main(String[] args){
+
+        String result = answer("Привет, Бот.");
+
+     System.out.println("Бот: " +result );
+    */ }
+
+
 }
