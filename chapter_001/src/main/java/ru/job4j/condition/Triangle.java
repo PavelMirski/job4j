@@ -15,7 +15,8 @@ public class Triangle {
      * @return полуперимента.
      */
     public double period(double a, double b, double c) {
-        return -1;
+        double p = (a + b + c) / 2;
+        return  p ;
     }
 
     /**
@@ -29,30 +30,39 @@ public class Triangle {
      * @return
      */
     private boolean exist(double a, double c, double b) {
+
+        if (b + c <= a) {
+            //return false;
+        } else if (a + c <= b) {
+            //return false;
+        }if (a + b <= c) {
+            //return false;
+        }
         return false;
     }
 
-    /**
-     * Метод должен вычислить площадь треугольника.
-     *
-     * Формула.
-     *
-     * √ p *(p - a) * (p - b) * (p - c)
-     *
-     * где √ - корень квадратный, для извлечения корня использовать метод Math.sqrt().
-     *
-     * @return Вернуть площадь, если треугольник существует или -1.
-     */
-    public double area(int x1, int y1, int x2, int y2, int x3, int y3) {
-        double rsl = -1;
-        double a = new Point().distance(x1, y1, x2, y2);
-        double b = new Point().distance(x2, y2, x3, y3);
-        double c = new Point().distance(x1, y1, x3, y3);
-        double p = period(a, b, c);
-        if (this.exist(a, b, c)) {
-            // написать формулу для расчета площади треугольника.
-            rsl = -1;
+        /**
+         * Метод должен вычислить площадь треугольника.
+         *
+         * Формула.
+         *
+         * √ p *(p - a) * (p - b) * (p - c)
+         *
+         * где √ - корень квадратный, для извлечения корня использовать метод Math.sqrt().
+         *
+         * @return Вернуть площадь, если треугольник существует или -1.
+         */
+        public double area(int x1, int y1, int x2, int y2, int x3, int y3) {
+            double rsl = 2;
+            double a = new Point().distance(x1, y1, x2, y2);
+            double b = new Point().distance(x2, y2, x3, y3);
+            double c = new Point().distance(x1, y1, x3, y3);
+            double p = period(a, b, c);
+            if (this.exist(a, b, c)) {
+                // написать формулу для расчета площади треугольника.
+                rsl = Math.sqrt(p *(p - a) * (p - b) * (p - c));
+
+            }
+            return rsl;
         }
-        return rsl;
     }
-}
