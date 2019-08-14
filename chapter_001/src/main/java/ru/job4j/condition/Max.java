@@ -7,7 +7,7 @@ public class Max {
         //left = 3;
         //right = 2;
 
-        int result = left == right ? 0 : right;
+        int result = left > right ? left : right;
 
         return result;
     }
