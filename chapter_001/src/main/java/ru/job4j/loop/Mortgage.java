@@ -19,9 +19,10 @@ public class Mortgage {
 
             year = allPaing / 12;
 
+            year++;
+
         }
 
-        year++;
         return year;
     }
 }
