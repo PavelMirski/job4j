@@ -2,13 +2,24 @@ package ru.job4j.array;
 
 public class Prepare {
     public static void main(String[] args) {
-        int[] rst = new int[5];
-        for (int i = 0; i < 5; i++) {
+          boolean[] data = {true, true, true, true};
+        boolean result = false;
+        int a = 0 ;
+        int b = 0;
+        for (int z = 0; z < data.length; z++){
+            a += ((data[z] == true) ? 0 : 1 );
 
-            rst[i] = (int) Math.pow(i + 1, 2);
+            b += ((data[z] == false) ? 1 : 0 );
 
-            System.out.println(rst[i]);
+            if(a == 0 || b== 0)
+                result = true;
+            else
+                break;
+        }
+
+            System.out.println(a);
+            System.out.println(b);
         }
     }
 
-}
+
