@@ -14,4 +14,4 @@ public class Min {
     }
 }
 
-//works
+//Works
