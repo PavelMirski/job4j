@@ -13,3 +13,5 @@ public class Min {
         return min;
     }
 }
+
+//works
