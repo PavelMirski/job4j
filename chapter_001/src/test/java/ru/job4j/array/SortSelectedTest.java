@@ -1,21 +1,15 @@
-package ru.job4j.array;
-
-import org.jboss.arquillian.container.test.api.Deployment;
-import org.jboss.arquillian.junit.Arquillian;
-import org.jboss.shrinkwrap.api.ShrinkWrap;
-import org.jboss.shrinkwrap.api.asset.EmptyAsset;
-import org.jboss.shrinkwrap.api.spec.JavaArchive;
-import org.junit.runner.RunWith;
-
-import static org.junit.Assert.*;
-
-@RunWith(Arquillian.class)
-public class SortSelectedTest {
-    @Deployment
-    public static JavaArchive createDeployment() {
-        return ShrinkWrap.create(JavaArchive.class)
-                .addClass(SortSelected.class)
-                .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
-    }
-
-}
+//package ru.job4j.array;
+//
+//import org.junit.Test;
+//import static org.hamcrest.core.Is.is;
+//import static org.junit.Assert.assertThat;
+//
+//public class SortSelectedTest {
+//    @Test
+//    public void whenSort() {
+//        int[] input = new int[] {3, 4, 1, 2, 5};
+//        int result[] = SortSelected.sort(input);
+//        int[] expect = new int[] {1, 2, 3, 4, 5};
+//        assertThat(result, is(expect));
+//    }
+//}

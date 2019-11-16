@@ -8,7 +8,6 @@ public class MinDiapason {
             if (array[i] < min) {
                 min = array[i];
             }
-            //System.out.println("Min is " + min);
 
         }
 

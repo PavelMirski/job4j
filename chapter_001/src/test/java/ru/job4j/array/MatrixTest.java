@@ -1,21 +1,18 @@
-package ru.job4j.array;
-
-import org.jboss.arquillian.container.test.api.Deployment;
-import org.jboss.arquillian.junit.Arquillian;
-import org.jboss.shrinkwrap.api.ShrinkWrap;
-import org.jboss.shrinkwrap.api.asset.EmptyAsset;
-import org.jboss.shrinkwrap.api.spec.JavaArchive;
-import org.junit.runner.RunWith;
-
-import static org.junit.Assert.*;
-
-@RunWith(Arquillian.class)
-public class MatrixTest {
-    @Deployment
-    public static JavaArchive createDeployment() {
-        return ShrinkWrap.create(JavaArchive.class)
-                .addClass(Matrix.class)
-                .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
-    }
-
-}
+//package ru.job4j.array;
+//
+//import org.junit.Test;
+//import static org.hamcrest.core.Is.is;
+//import static org.junit.Assert.assertThat;
+//
+//public class MatrixTest {
+//    @Test
+//    public void when2on2() {
+//        Matrix matrix = new Matrix();
+//        int[][] table = matrix.multiple(2);
+//        int[][] expect = {
+//                {1, 2},
+//                {2, 4}
+//        };
+//        assertThat(table, is(expect));
+//    }
+//}

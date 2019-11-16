@@ -5,13 +5,12 @@ import org.junit.Test;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
-public class MinDiapasonTest {
+public class MinTest {
     @Test
     public void whenFirstMin() {
         assertThat(
-                MinDiapason.findMin(
-                        new int[] {-1, 0, 5, 10},
-                        1, 3
+                Min.findMin(
+                        new int[] {0, 5, 10}
                 ),
                 is(0)
         );
@@ -20,9 +19,8 @@ public class MinDiapasonTest {
     @Test
     public void whenLastMin() {
         assertThat(
-                MinDiapason.findMin(
-                        new int[] {10, 5, 3, 1},
-                        1, 3
+                Min.findMin(
+                        new int[] {10, 5, 3}
                 ),
                 is(3)
         );
@@ -31,13 +29,10 @@ public class MinDiapasonTest {
     @Test
     public void whenMiddleMin() {
         assertThat(
-                MinDiapason.findMin(
-                        new int[] {10, 2, 5, 1},
-                        0, 2
+                Min.findMin(
+                        new int[] {10, 2, 5}
                 ),
                 is(2)
         );
     }
 }
-
-//does not work
