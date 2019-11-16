@@ -40,4 +40,4 @@ public class MinDiapasonTest {
     }
 }
 
-//does not work
+//Does not work
