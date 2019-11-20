@@ -15,4 +15,4 @@ public class MinDiapason {
     }
 }
 
-// Why doesnt work?
+// Work!
