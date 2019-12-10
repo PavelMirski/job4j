@@ -11,14 +11,14 @@ public class MatrixCheck {
             for (int cell = 0; cell < board.length; cell++) {
                 char sign = board[row][cell];
                 System.out.print(sign);
-                if (board[row][row] == 'X'){
+                if (board[row][row] == 'X') {
                     countRow = board[row][row] == board[row][cell] ? countRow + 1 : countRow;
                     countCell = board[row][row] == board[cell][row] ? countCell + 1 : countCell;
                 }
 
             }
             System.out.println();
-            if (countCell == board.length || countRow == board.length){
+            if (countCell == board.length || countRow == board.length) {
                 result = true;
             }
 
