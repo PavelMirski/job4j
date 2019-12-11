@@ -7,13 +7,13 @@ public class Mortgage {
         int allPaing = 0;
         int ostatok = 0;
 
-        while(ostatok >= forYear){
+        while (ostatok >= forYear) {
 
-            amount += amount*(percent/100);
+            amount += amount * (percent / 100);
 
             allPaing = amount / monthly;
 
-            forYear = monthly*12;
+            forYear = monthly * 12;
 
             ostatok = allPaing - forYear;
 
