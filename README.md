@@ -12,4 +12,6 @@ https://job4j.ru/courses/java_with_zero_to_job.html
 
 Папка temp удалена с VikaWin10
 
+Объединение зафиксированных изменений
+
 
