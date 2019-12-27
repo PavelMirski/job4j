@@ -14,4 +14,6 @@ https://job4j.ru/courses/java_with_zero_to_job.html
 
 Объединение зафиксированных изменений
 
+Перенос ветки hotfix_2 на удаленный репозиторий
+
 
