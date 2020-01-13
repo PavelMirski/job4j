@@ -9,14 +9,10 @@ public class Max {
     }
 
     public int max(int first, int second, int third) {
-        int tmp = max(first, second);
-        int result = third > tmp ? third : tmp;
-        return result;
+        return max(first, max(second, third));
     }
 
     public int max(int first, int second, int third, int fourth) {
-        int tmp = max(first, second, third);
-        int result = fourth > tmp ? fourth : tmp;
-        return result;
+        return max(first, max(second, third, fourth));
     }
 }
