@@ -1,19 +1,17 @@
-import org.jboss.arquillian.container.test.api.Deployment;
-import org.jboss.arquillian.junit.Arquillian;
-import org.jboss.shrinkwrap.api.ShrinkWrap;
-import org.jboss.shrinkwrap.api.asset.EmptyAsset;
-import org.jboss.shrinkwrap.api.spec.JavaArchive;
-import org.junit.runner.RunWith;
+package ru.job4j.condition;
 
-import static org.junit.Assert.*;
+import org.junit.Test;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 
-@RunWith(Arquillian.class)
 public class PointTest {
-    @Deployment
-    public static JavaArchive createDeployment() {
-        return ShrinkWrap.create(JavaArchive.class)
-                .addClass(ru.job4j.condition.Point.class)
-                .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
+    @Test
+    public void whenDistance3d() {
+        Point a = new Point(0, 2, 3);
+        Point b = new Point(2, 4, 1);
+
+        double result = Point.distance3d(a, b);
+        assertThat(result, is(3.4641016151377544));
     }
 
 }
