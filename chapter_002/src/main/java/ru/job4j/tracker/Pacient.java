@@ -1,10 +1,8 @@
 package ru.job4j.tracker;
 
-public class Dentist extends Doctor {
+public class Pacient {
     private String name;
     public String getName() {
         return name;
     }
-
-
 }
